@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(114, 4, 24);
+}
+header{
+    margin-top: 5rem;
+}
+.logo_container{
+    display: flex;
+    margin-left: 32px;
+}
+.logo_container img{
+    width: 68px;
+    height: 68px;
+}
+.logo_textContent{
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#for_line{
+    border: 1px solid white;
+    width: 203px;
+    
+}
+section{
+    
+    
+}
