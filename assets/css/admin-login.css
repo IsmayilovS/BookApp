@@ -7,6 +7,7 @@
 body{
     background-color: rgb(114, 4, 24);
 }
+/* Logo Part */
 header{
     margin-top: 5rem;
 }
@@ -18,19 +19,95 @@ header{
     width: 68px;
     height: 68px;
 }
+#firstP{
+    font-family: "Mont";
+    font-weight: 900;
+    font-size: 14px;
+}
+#secondP{
+    font-family: "Mont";
+    font-weight: 400;
+    font-size: 13px;
+}
 .logo_textContent{
     color: white;
-    
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-left: 10px;
 }
 #for_line{
     border: 1px solid white;
     width: 203px;
-    
 }
+/*  */
+
+/* Admin Login and Password part */
 section{
-    
-    
+    margin-top: 6.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form{
+    background-color: white;
+    width: 662px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+section button{
+    background-color: rgb(225, 106, 0);
+    color: white;
+    border: none;
+}
+section h2{
+    margin-top: 10px;
+}
+#UsernameL{
+    margin:10px 20px 10px 20px;
+    padding: 15px;
+}
+#PasswordL{
+    margin:10px 20px 10px 20px;
+    padding: 15px;
+}
+#btnL{
+    margin:50px 20px 10px 20px;
+    padding: 15px;
+}
+/*  */
+/* Admin Registration part */
+.create-form{
+    background-color: white;
+    width: 662px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+section button{
+    background-color: rgb(225, 106, 0);
+    color: white;
+    border: none;
+}
+section h2{
+    margin-top: 10px;
+}
+#UsernameL{
+    margin:10px 20px 10px 20px;
+    padding: 15px;
+}
+#PasswordL{
+    margin:10px 20px 10px 20px;
+    padding: 15px;
+}
+#btnL{
+    margin:50px 20px 10px 20px;
+    padding: 15px;
+}
+/*  */
+.hidden{
+    display: none;
 }

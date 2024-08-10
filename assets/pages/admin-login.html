@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/admin-login.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <div class="logo_container">
             <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
             <span class="logo_textContent">
-                <p>Library</p>
+                <p id="firstP">Library</p>
                 <p id="for_line"></p>
-                <p>Admin Panel</p>
+                <p id="secondP">Admin Panel</p>
             </span>
         </div>
     </header>
     <section>
-        <div></div>
+        <!-- <div> -->
+            <form class="create-form" class="" action="">
+                <h2>Welcome Admin</h2>
+                <input type="email" name="" id="UsernameL" required>
+                <input type="text" name="" id="PasswordL" required>
+                <button id="btnL" type="submit">Sign Up</button>
+                <p>Already have an account? <u id="u-sign">Sign In</u></p>
+            </form>
+            <form class="login-form hidden" action="">
+                <h2>Welcome Admin</h2>
+                <input type="email" name="" id="UsernameL" required>
+                <input type="text" name="" id="PasswordL" required>
+                <button id="btnL" type="submit">Sign In</button>
+                <p>Don't have an account? <u id="u-create">Create Account</u></p>
+            </form>
+        <!-- </div> -->
+
     </section>
 
 
     <script type="module" src="../js/admin-login.js"></script>
 </body>
+
 </html>
