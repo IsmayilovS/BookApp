@@ -65,15 +65,15 @@ section button{
 section h2{
     margin-top: 10px;
 }
-#UsernameL{
+#email{
     margin:10px 20px 10px 20px;
     padding: 15px;
 }
-#PasswordL{
+#password{
     margin:10px 20px 10px 20px;
     padding: 15px;
 }
-#btnL{
+#submit{
     margin:50px 20px 10px 20px;
     padding: 15px;
 }
@@ -95,15 +95,15 @@ section button{
 section h2{
     margin-top: 10px;
 }
-#UsernameL{
+#emailL{
     margin:10px 20px 10px 20px;
     padding: 15px;
 }
-#PasswordL{
+#passwordL{
     margin:10px 20px 10px 20px;
     padding: 15px;
 }
-#btnL{
+#submitL{
     margin:50px 20px 10px 20px;
     padding: 15px;
 }

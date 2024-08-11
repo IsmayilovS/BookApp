@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/admin-login.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script type="module" src="../js/admin-register.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -23,17 +24,17 @@
     <section>
         <!-- <div> -->
             <form class="create-form" class="" action="">
-                <h2>Welcome Admin</h2>
-                <input type="email" name="" id="UsernameL" required>
-                <input type="text" name="" id="PasswordL" required>
-                <button id="btnL" type="submit">Sign Up</button>
+                <h2>Creating Admin</h2>
+                <input type="email" name="" id="email" required>
+                <input type="password" name="" id="password" required>
+                <button id="submit" type="submit">Create Account</button>
                 <p>Already have an account? <u id="u-sign">Sign In</u></p>
             </form>
             <form class="login-form hidden" action="">
                 <h2>Welcome Admin</h2>
-                <input type="email" name="" id="UsernameL" required>
-                <input type="text" name="" id="PasswordL" required>
-                <button id="btnL" type="submit">Sign In</button>
+                <input type="email" name="" id="emailL" required>
+                <input type="password" name="" id="passwordL" required>
+                <button id="submitL" type="submit">Join</button>
                 <p>Don't have an account? <u id="u-create">Create Account</u></p>
             </form>
         <!-- </div> -->
@@ -41,7 +42,7 @@
     </section>
 
 
-    <script type="module" src="../js/admin-login.js"></script>
+    
 </body>
 
 </html>
