@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/admin-panel.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Document</title>
 </head>
 
@@ -23,32 +24,78 @@
             <ul class="logo_list">
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>Home</p> 
+                    <p>Home</p>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>Books</p> 
+                    <p>Books</p>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>About</p> 
+                    <p>About</p>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>Join Us</p> 
+                    <p>Join Us</p>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>Contact</p> 
+                    <p>Contact</p>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>Log out</p> 
+                    <p>Log out</p>
                 </li>
             </ul>
         </aside>
         <section>
-            
+            <article id="admin-profile">
+                <span></span>
+                <span>
+                    <i class="bi bi-person"></i>
+                    <p>Admin</p>
+                </span>
+            </article>
+            <article>
+                <div>
+                    <h2>Add book</h2>
+                    <h4>Search book</h4>
+                    <input type="text" name="" id="search-input">
+                    <button id="search-btn">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <div>
+                    <h4>Book form</h4>
+                    <form action="" id="book-form">
+                        <p>Book Name</p>    
+                        <input type="text" name="" id="book-title">
+                        <p>Author Name</p>    
+                        <input type="text" name="" id="author-title">
+                        <p>Book Image Url</p>    
+                        <input type="text" name="" id="image-title">
+                        <p>Description</p>    
+                        <input type="text" name="" id="description">
+                        <p>Book Type</p>    
+                        <input type="text" name="" id="book-type">
+                        <br>
+                        <button type="submit" id="book-form-btn">Add</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>About Store</h3>
+                    <form action="" id="aboutStore-form">
+                        <p>Title</p>    
+                        <input type="text" name="" id="title">
+                        <p>Book Image Url</p>    
+                        <input type="text" name="" id="title">
+                        <p>Description</p>    
+                        <input type="text" name="" id="title">
+                        <br>
+                        <button type="submit">About info add</button>
+                    </form>
+                </div>
+            </article>
         </section>
     </main>
 

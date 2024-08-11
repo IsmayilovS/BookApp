@@ -15,7 +15,9 @@ aside{
 }
 section{
     background-color: rgb(255, 250, 245);
+    width: 100vh;
 }
+
 /*  */
 
 /* Big Logo */
@@ -76,4 +78,62 @@ section{
 .logo_list img {
     width: 33px;
     height: 35px;
+}
+/* Starting of Section */
+/* ---------------------------------------- */
+/* Admin Profile and Logo*/
+#admin-profile{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.bi-person{
+    color: black;
+    font-size: 21px;
+}
+#admin-profile span{
+    display: flex;
+}
+#admin-profile p{
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    margin: 3px 40px 0 5px;
+}
+
+/* ----------------------------------------- */
+/*  */
+/*  Book Form */
+#book-form{
+    margin-left: 30px;
+    width: 1107px;
+    background-color: rgb(249, 250, 251);
+}
+#author-title, #book-title, #image-title, #book-type{
+    height: 40px;
+    width: 60%;
+    border: 1px solid rgb(226, 230, 238);
+    border-radius: 10px;
+    box-shadow: 3px 0px 10px 1px rgb(226, 230, 238);
+}
+#description{
+    padding: 40px;
+    width: 60%;
+    border: 1px solid rgb(226, 230, 238);
+    border-radius: 10px;
+    box-shadow: 3px 0px 10px 1px rgb(226, 230, 238);
+}
+#book-form-btn{
+    height: 40px;
+    background-color: rgb(255, 139, 0);
+    color: white;
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+#book-form p{
+    font-size: 14px;
+    font-family: "Roboto";
 }

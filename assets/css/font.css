@@ -2,3 +2,7 @@
     font-family: "Mont";
     src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
