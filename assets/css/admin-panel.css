@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Semanthic's design */
+main{
+    display: flex;
+}
+aside{
+    background-color: rgb(114, 4, 24);
+    width: 355px;
+    height: 100vh;
+    padding-top: 6.5rem;
+}
+section{
+    background-color: rgb(255, 250, 245);
+}
+/*  */
+
+/* Big Logo */
+.logo_container {
+    display: flex;
+    margin-left: 32px;
+}
+
+.logo_container img {
+    width: 68px;
+    height: 82px;
+}
+
+#firstP {
+    font-family: "Mont";
+    font-weight: 900;
+    font-size: 14px;
+}
+
+#secondP {
+    font-family: "Mont";
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.logo_textContent {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+#for_line {
+    border: 1px solid white;
+    width: 203px;
+}
+/*  */
+
+/* List of Logos */
+.logo_list {
+    list-style: none;
+    margin: 25px 0px 0px 32px;
+}
+
+.logo_list li {
+    display: flex;
+    margin-bottom: 40px;
+}
+.logo_list li p{
+    color: white;
+    font-size: 18px;
+    font-family: "Mont";
+    font-weight: 400;
+    padding: 7px 0 0 7px;
+}
+
+.logo_list img {
+    width: 33px;
+    height: 35px;
+}
