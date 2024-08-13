@@ -10,7 +10,7 @@ main{
 aside{
     background-color: rgb(114, 4, 24);
     width: 355px;
-    height: 100vh;
+    height: 100wh;
     padding-top: 6.5rem;
 }
 section{
@@ -102,23 +102,37 @@ section{
 }
 
 /* ----------------------------------------- */
+/* Search Bar */
+.searh-bar{
+    margin-left: 30px;
+}
+#search-input{
+    width: 395px;
+    height: 41px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border-color: gold;
+    /* border color duzeldersen ???? */
+
+}
 /*  */
 /*  Book Form */
+/* h tagi qalib yazarsan ??? */
 #book-form{
-    margin-left: 30px;
-    width: 1107px;
+    margin:0 15px;
     background-color: rgb(249, 250, 251);
+    padding:0 15px;
 }
 #author-title, #book-title, #image-title, #book-type{
     height: 40px;
-    width: 60%;
+    width: 100%;
     border: 1px solid rgb(226, 230, 238);
     border-radius: 10px;
     box-shadow: 3px 0px 10px 1px rgb(226, 230, 238);
 }
 #description{
     padding: 40px;
-    width: 60%;
+    width: 100%;
     border: 1px solid rgb(226, 230, 238);
     border-radius: 10px;
     box-shadow: 3px 0px 10px 1px rgb(226, 230, 238);
@@ -127,13 +141,58 @@ section{
     height: 40px;
     background-color: rgb(255, 139, 0);
     color: white;
-    width: 60%;
+    width: 100%;
     border: none;
     border-radius: 10px;
-    margin-top: 10px;
-
+    margin-top: 20px;
 }
 #book-form p{
     font-size: 14px;
     font-family: "Roboto";
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+/* ----------------------------------------- */
+/* About Store */
+div h3{
+    margin:20px 0 20px 30px;
+/* font size baxarsan internetden ??????? */
+}
+#aboutStore-form{
+    margin:0 15px;
+    background-color: rgb(249, 250, 251);
+    border-radius: 10px;
+    padding:0 15px;
+}
+#title2, #image-title2{
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgb(226, 230, 238);
+    border-radius: 10px;
+    box-shadow: 3px 0px 10px 1px rgb(226, 230, 238);
+}
+
+#description2{
+    padding: 40px;
+    width: 100%;
+    border: 1px solid rgb(226, 230, 238);
+    border-radius: 10px;
+    box-shadow: 3px 0px 10px 1px rgb(226, 230, 238);
+}
+
+#aboutStore-form-btn{
+    height: 40px;
+    background-color: rgb(255, 139, 0);
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#aboutStore-form p{
+    font-size: 14px;
+    font-family: "Roboto";
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
