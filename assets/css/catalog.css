@@ -9,7 +9,8 @@ body{
 }
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-top: 40px;
 }
 
 
@@ -62,11 +63,14 @@ header{
 
 .navbar-list a{
     text-decoration: none;
-    color: black;
+    color: rgb(36, 20, 0);
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Mont";
 }
 
 #catalog_href{
-    color: goldenrod;
+    color: rgb(225, 106, 0);
     text-decoration-line: underline;
 }
 
@@ -87,4 +91,97 @@ header{
     font-family: "Roboto";
     font-weight: 400;
     margin: 3px 40px 0 5px;
+}
+/*  */
+/* AllBooks navigation bar */
+.allBooks-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 123px;
+}
+
+.allBooks-section h2{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "Mont";
+}
+
+.allBooks-navbar-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 7px;
+}
+
+.allBooks-navbar-list a{
+    text-decoration: none;
+    color: rgb(36, 20, 0);
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Mont";
+}
+
+/*  */
+/* AllBooks Slider Section */
+
+.allBooks-slider-section{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.slider{
+    border: 1px solid black;
+    display: flex;
+    width: 70%;
+    gap: 3.75rem;
+    height: 400px;
+    background-color: yellow;
+    margin: 10px 0;
+    align-items: center;
+}
+/*  */
+/* Slider's elements */
+.slider span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.slider img{
+    width: 134px;
+    height: 190px;
+}
+
+#new-tag{
+    background-color: rgb(235, 87, 87);
+    display: flex;
+    align-self: flex-end;
+    color: white;
+    font-weight: 900;
+    font-size: 9px;
+    font-family: "Mont";
+}
+
+#slider-bookName{
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Mont";
+}
+
+#slider-authorName{
+    font-weight: 400;
+    font-size: 12px;
+    font-family: "Mont";
+}
+
+.slider button{
+    background-color: rgb(225, 106, 0);
+    color: white;
+    font-weight: 900;
+    font-size: 12px;
+    font-family: "Mont";
+    width: 136px;
+    height: 29px;
+    cursor: pointer;
 }
