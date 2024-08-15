@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/admin-panel.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Document</title>
+    <title>Admin</title>
 </head>
 
 <body>
@@ -24,27 +24,27 @@
             <ul class="logo_list">
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>Home</p>
+                    <p><a href="">Home</p></a>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>Books</p>
+                    <p><a href="">Books</p></a>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>About</p>
+                    <p><a href="">About</p></a>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>Join Us</p>
+                    <p><a href="">Join Us</p></a>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>Contact</p>
+                    <p><a href="">Contact</p></a>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p>Log out</p>
+                    <p><a href="">Log out</p></a>
                 </li>
             </ul>
         </aside>
@@ -58,46 +58,118 @@
             </article>
             <article>
                 <div>
-                    <h2>Add book</h2>
-                    <h4>Search book</h4>
-                    <input type="text" name="" id="search-input">
+                    <h2 id="add-book-text">Add book</h2>
+                    <h4 id="search-book-text">Search book</h4>
+                    <input type="text" name="" placeholder="Dan Brown" id="search-input">
                     <button id="search-btn">
                         <i class="bi bi-search"></i>
                     </button>
+                    <div class="search-suggestion-container">
+                        <div id="search-suggestion-container-content">
+                            <i class="bi bi-clock-history"></i>
+                            <p>Dan Brown</p>
+                        </div>
+                        <div id="search-suggestion-container-content">
+                            <i class="bi bi-clock-history"></i>
+                            <p>Dan Brown</p>
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <h4>Book form</h4>
+                    <h4 id="book-form-text">Book form</h4>
                     <form action="" id="book-form">
-                        <p>Book Name</p>    
+                        <p>Book Name</p>
                         <input type="text" name="" id="book-title">
-                        <p>Author Name</p>    
+                        <p>Author Name</p>
                         <input type="text" name="" id="author-title">
-                        <p>Book Image Url</p>    
+                        <p>Book Image Url</p>
                         <input type="text" name="" id="image-title">
-                        <p>Description</p>    
+                        <p>Description</p>
                         <input type="text" name="" id="description">
-                        <p>Book Type</p>    
+                        <p>Book Type</p>
                         <input type="text" name="" id="book-type">
                         <br>
                         <button type="submit" id="book-form-btn">Add</button>
                     </form>
                 </div>
                 <div>
-                    <h3>About Store</h3>
+                    <h3 id="aboutStore-text">About Store</h3>
                     <form action="" id="aboutStore-form">
-                        <p>Title</p>    
-                        <input type="text" name="" id="title">
-                        <p>Book Image Url</p>    
-                        <input type="text" name="" id="title">
-                        <p>Description</p>    
-                        <input type="text" name="" id="title">
+                        <p>Title</p>
+                        <input type="text" name="" id="aboutStore-title">
+                        <p>Book Image Url</p>
+                        <input type="text" name="" id="aboutStore-image-title">
+                        <p>Description</p>
+                        <input type="text" name="" id="aboutStore-description">
                         <br>
-                        <button type="submit">About info add</button>
+                        <button type="submit" id="aboutStore-btn">About info add</button>
                     </form>
                 </div>
             </article>
+            <article>
+                <h3 id="books-text">Books</h3>
+                <table class="books-table">
+                    <thead>
+                        <tr>
+                            <th id="es1">#</th>
+                            <th id="es2">Title</th>
+                            <th id="es3"><p>Description</p></th>
+                            <th id="es4">Category</th>
+                            <th id="es5">Author</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td id="book-table-img-td"><img
+                                    src="https://m.media-amazon.com/images/I/61xTXK18-UL._AC_UF1000,1000_QL80_.jpg"
+                                    alt="" srcset="" id="book-table-img">
+                                <p>Angels</p>
+                            </td>
+                            <td id="es4-td"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni nisi nam,
+                                itaque
+                                velit accusantium in quidem quae soluta, eligendi id voluptatem laudantium
+                                voluptatibus
+                                blanditiis iusto ipsa ipsam sit. Nisi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, vel voluptatibus modi exercitationem dolorem unde eligendi accusantium consequatur tenetur at laborum asperiores quae repellendus quam ipsam eveniet doloribus maxime in!</p></td>
+                            <td>Dedective</td>
+                            <td>Dan Brown</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td id="book-table-img-td"><img
+                                    src="https://m.media-amazon.com/images/I/61xTXK18-UL._AC_UF1000,1000_QL80_.jpg"
+                                    alt="" srcset="" id="book-table-img">
+                                <p>Angels</p>
+                            </td>
+                            <td id="es4-td"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni nisi nam,
+                                itaque
+                                velit accusantium in quidem quae soluta, eligendi id voluptatem laudantium
+                                voluptatibus
+                                blanditiis iusto ipsa ipsam sit. Nisi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, vel voluptatibus modi exercitationem dolorem unde eligendi accusantium consequatur tenetur at laborum asperiores quae repellendus quam ipsam eveniet doloribus maxime in!</p></td>
+                            <td>Dedective</td>
+                            <td>Dan Brown</td>
+                            <tr>
+                                <td>1</td>
+                                <td id="book-table-img-td"><img
+                                        src="https://m.media-amazon.com/images/I/61xTXK18-UL._AC_UF1000,1000_QL80_.jpg"
+                                        alt="" srcset="" id="book-table-img">
+                                    <p>Angels</p>
+                                </td>
+                                <td id="es4-td"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni nisi nam,
+                                    itaque
+                                    velit accusantium in quidem quae soluta, eligendi id voluptatem laudantium
+                                    voluptatibus
+                                    blanditiis iusto ipsa ipsam sit. Nisi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, vel voluptatibus modi exercitationem dolorem unde eligendi accusantium consequatur tenetur at laborum asperiores quae repellendus quam ipsam eveniet doloribus maxime in!</p></td>
+                                <td>Dedective</td>
+                                <td>Dan Brown</td>
+                            </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
         </section>
     </main>
+
 
     <script type="module" src="../js/admin-panel.js"></script>
 </body>

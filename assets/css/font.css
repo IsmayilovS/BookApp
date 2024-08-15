@@ -6,3 +6,11 @@
     font-family: "Roboto";
     src: url(../fonts/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: "Preah";
+    src: url(../fonts/Preahvihear-Regular.ttf);
+}
+@font-face {
+    font-family: "Nunito";
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}

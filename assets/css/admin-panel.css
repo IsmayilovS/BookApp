@@ -3,19 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Semanthic's design */
-main{
+main {
     display: flex;
 }
-aside{
+
+aside {
     background-color: rgb(114, 4, 24);
     width: 355px;
-    height: 100vh;
     padding-top: 6.5rem;
 }
-section{
+
+section {
     background-color: rgb(255, 250, 245);
-    width: 100vh;
+    width: 1085px;
+
 }
 
 /*  */
@@ -55,6 +58,7 @@ section{
     border: 1px solid white;
     width: 203px;
 }
+
 /*  */
 
 /* List of Logos */
@@ -67,34 +71,43 @@ section{
     display: flex;
     margin-bottom: 40px;
 }
-.logo_list li p{
+
+.logo_list li p {
     color: white;
     font-size: 18px;
     font-family: "Mont";
     font-weight: 400;
     padding: 7px 0 0 7px;
 }
+.logo_list li a{
+    color: white;
+    text-decoration: none;
+}
 
 .logo_list img {
     width: 33px;
     height: 35px;
 }
+
 /* Starting of Section */
 /* ---------------------------------------- */
 /* Admin Profile and Logo*/
-#admin-profile{
+#admin-profile {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.bi-person{
+
+.bi-person {
     color: black;
     font-size: 21px;
 }
-#admin-profile span{
+
+#admin-profile span {
     display: flex;
 }
-#admin-profile p{
+
+#admin-profile p {
     font-size: 14px;
     font-family: "Roboto";
     font-weight: 400;
@@ -102,38 +115,278 @@ section{
 }
 
 /* ----------------------------------------- */
-/*  */
-/*  Book Form */
-#book-form{
+/* Add Book, search book */
+#add-book-text {
+    font-size: 30px;
+    font-family: "Mont";
+    font-weight: 600;
+    margin: 51px 0 30px 30px;
+    color: rgb(51, 51, 51);
+}
+
+#search-book-text {
+    font-size: 18px;
+    font-family: "Mont";
+    font-weight: 600;
+    margin: 0 0 10px 30px;
+    color: rgb(51, 51, 51);
+}
+
+#search-input {
     margin-left: 30px;
-    width: 1107px;
+    width: 395px;
+    height: 41px;
+    padding-left: 30px;
+    border-radius: 20px;
+    border: none;
+    outline-color: rgb(160, 148, 133);
+    outline: 1px solid rgb(160, 148, 133);
+}
+
+#search-input::placeholder {
+    color: rgb(173, 173, 173);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Preah";
+}
+
+#search-btn {
+    background-color: rgb(255, 139, 0);
+    height: 41px;
+    width: 63px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-suggestion-container {
+    width: 388px;
+    background-color: rgb(241, 240, 240);
+    margin-left: 30px;
+    margin-top: 6px;
+    padding: 2px 20px 17px 25px;
+    border-radius: 20px;
+    height: 85px;
+    overflow-y:scroll;
+    scrollbar-width: none;
+    color: rgb(173, 173, 173);
+
+}
+.search-suggestion-container p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Preah";
+    cursor: pointer;
+}
+.search-suggestion-container i{
+    margin-top: 4px;
+}
+
+
+#search-suggestion-container-content{
+    display: flex;
+    gap: 26px;
+    margin-top: 15px;
+}
+
+/*  */
+
+/*  Book Form */
+#book-form-text {
+    font-size: 18px;
+    font-family: "Mont";
+    font-weight: 600;
+    margin-top: 161px;
+    margin-left: 18px;
+    color: rgb(51, 51, 51);
+}
+
+#book-form {
+    margin: 0 15px;
     background-color: rgb(249, 250, 251);
+    padding: 1px 15px 0 15px;
+    border-radius: 10px;
 }
-#author-title, #book-title, #image-title, #book-type{
+
+#book-form input {
+    margin-top: 10px;
+}
+
+#author-title,
+#book-title,
+#image-title,
+#book-type {
     height: 40px;
-    width: 60%;
+    width: 100%;
     border: 1px solid rgb(226, 230, 238);
     border-radius: 10px;
     box-shadow: 3px 0px 10px 1px rgb(226, 230, 238);
 }
-#description{
+
+#description {
     padding: 40px;
-    width: 60%;
+    width: 100%;
     border: 1px solid rgb(226, 230, 238);
     border-radius: 10px;
     box-shadow: 3px 0px 10px 1px rgb(226, 230, 238);
 }
-#book-form-btn{
+
+#book-form-btn {
     height: 40px;
     background-color: rgb(255, 139, 0);
     color: white;
-    width: 60%;
+    width: 100%;
     border: none;
     border-radius: 10px;
-    margin-top: 10px;
-
+    margin: 24px 0;
+    cursor: pointer;
 }
-#book-form p{
+
+#book-form p {
     font-size: 14px;
     font-family: "Roboto";
+    margin-top: 20px;
 }
+
+/*  */
+
+/* About Store */
+
+#aboutStore-text{
+    margin-top: 161px;
+    font-size: 30px;
+    font-family: "Mont";
+    font-weight: 600;
+    margin-top: 81px;
+    margin-left: 30px;
+    color: rgb(51, 51, 51);
+}
+
+#aboutStore-form {
+    margin: 0 18px;
+    background-color: rgb(249, 250, 251);
+    padding: 1px 15px 0 15px;
+    border-radius: 10px;
+}
+
+#aboutStore-form input {
+    margin-top: 10px;
+}
+
+#aboutStore-title,
+#aboutStore-image-title {
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgb(226, 230, 238);
+    border-radius: 10px;
+    box-shadow: 3px 0px 10px 1px rgb(226, 230, 238);
+}
+
+#aboutStore-description {
+    padding: 40px;
+    width: 100%;
+    border: 1px solid rgb(226, 230, 238);
+    border-radius: 10px;
+    box-shadow: 3px 0px 10px 1px rgb(226, 230, 238);
+}
+
+#aboutStore-btn {
+    height: 40px;
+    background-color: rgb(255, 139, 0);
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+#aboutStore-form p {
+    font-size: 14px;
+    font-family: "Roboto";
+    margin-top: 20px;
+}
+/*  */
+
+/* ----------------------------------------- */
+
+
+/* Table */
+
+#books-text {
+    font-size: 30px;
+    font-family: "Mont";
+    font-weight: 600;
+    margin:136px 0 20px 30px;
+    color: rgb(51, 51, 51);
+}
+
+
+.books-table{
+    border-collapse:collapse ;
+    width: 95%;
+    margin-left: 30px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Nunito";
+}
+.books-table thead{
+    background-color:rgb(114, 4, 24) ;
+    color: white;
+}
+
+.books-table tbody tr{
+    text-align: center;
+    border-top: solid 2px rgb(230, 231, 233);
+    background: rgb(255, 255, 255);
+    color: rgb(5, 17, 26);
+    height: 48px;
+    border-bottom: solid 2px rgb(230, 231, 233);
+    
+}
+
+#es1{
+    width: 54px;
+}
+#es2{
+    width: 199px;
+}
+#es3{
+    width: 426px;
+}
+#es4{
+    width: 259px;
+}
+
+#es5{
+    width: 148px;
+}
+
+#book-table-img{
+    width: 27px;
+    height: 36px;
+    margin:6px 0;
+}
+
+#es4-td p{
+    width: 257px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    margin-left: 5.7rem;
+    
+}
+
+#book-table-img-td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#book-table-img-td p{
+    margin-left: 5px;
+}
+
