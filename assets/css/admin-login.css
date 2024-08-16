@@ -1,3 +1,4 @@
+@import url(../css/font.css);
 *{
     margin: 0;
     padding: 0;
@@ -57,6 +58,17 @@ section{
     gap: 20px;
     text-align: center;
 }
+
+.login-form p{
+    font-family: "Crimson";
+    margin-bottom: 20px;
+}
+
+.login-form u{
+    font-weight: 900;
+    font-family: "Crimson";
+}
+
 section button{
     background-color: rgb(225, 106, 0);
     color: white;
@@ -68,6 +80,7 @@ section h2{
 #email{
     margin:10px 20px 10px 20px;
     padding: 15px;
+    font-family: "Crimson";
 }
 #password{
     margin:10px 20px 10px 20px;
@@ -87,6 +100,17 @@ section h2{
     gap: 20px;
     text-align: center;
 }
+
+.create-form p{ 
+    font-family: "Crimson";
+    margin-bottom: 20px;
+}
+
+.create-form u{
+    font-weight: 900;
+    font-family: "Crimson";
+}
+
 section button{
     background-color: rgb(225, 106, 0);
     color: white;
@@ -94,10 +118,14 @@ section button{
 }
 section h2{
     margin-top: 10px;
+    font-size: 44px;
+    font-weight: 700;
+    font-family: "Mont";
 }
 #emailL{
     margin:10px 20px 10px 20px;
     padding: 15px;
+    font-family: "Crimson";
 }
 #passwordL{
     margin:10px 20px 10px 20px;

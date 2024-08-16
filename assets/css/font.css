@@ -14,3 +14,7 @@
     font-family: "Nunito";
     src: url(../fonts/Nunito-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: "Crimson";
+    src: url(../fonts/CrimsonText-Regular.ttf);
+}

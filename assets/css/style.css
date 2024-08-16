@@ -2,3 +2,264 @@
 :root{
     --darkBrown:rgb(36, 20, 0)
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Semanthic's design */
+
+body {
+    background-color: rgb(255, 250, 245);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+main{
+    display: flex;
+    margin-top: 244px;
+    justify-content: space-evenly;
+}
+
+footer{
+    background-color: rgb(57, 31, 0);
+    margin-top: 6.5rem;
+    height: 276px;
+}
+
+
+/*  */
+/* Header Logo*/
+.logo_container {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 32px;
+}
+
+.logo_container img {
+    width: 42px;
+    height: 42px;
+}
+
+#firstP {
+    font-family: "Mont";
+    font-weight: 900;
+    font-size: 14px;
+    color: rgb(114, 4, 24);
+    padding-top: 5px;
+}
+
+#secondP {
+    font-family: "Mont";
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--darkBrown);
+    padding-left: 5px;
+}
+
+.logo_textContent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+#for_line {
+    border: 1px solid rgb(105, 103, 101);
+    width: 203px;
+}
+
+/* Navigation */
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: var(--darkBrown);
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Mont";
+}
+
+#home_href {
+    color: rgb(225, 106, 0);
+    text-decoration-line: underline;
+    font-weight: 700;
+}
+
+/* User Profile Panel */
+#user-profile {
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.bi-person {
+    color: var(--darkBrown);
+    font-size: 21px;
+}
+
+#user-profile p {
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    margin: 3px 40px 0 5px;
+    color: var(--darkBrown);
+}
+
+/*  */
+/* Main Text Content (Books from A to Z) */
+
+.main-text-box h1{
+    font-size: 36px;
+    font-family: "Mont";
+    font-weight: 900;
+    color: var(--darkBrown);
+}
+
+main img{
+    width: 632px;
+    height: 489px;
+}
+
+.main-text-box p{
+    font-size: 13px;
+    font-family: "Mont";
+    font-weight: 400;
+    color: var(--darkBrown);
+    margin-bottom: 30px;
+    width: 370px;
+}
+
+.main-text-box a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(213, 100, 0);
+    box-shadow: 3px 3px 10px rgb(251, 236, 223);
+    font-size: 15px;
+    font-family: "Mont";
+    font-weight: 900;
+    padding: 11px 78px 10px 24px;
+}
+/*  */
+/* Catalog section */
+
+.catalog-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 43px;
+}
+.catalog-section h2{
+    color:var(--darkBrown) ;
+    font-size: 25px;
+    font-family: "Mont";
+    font-weight: 900;
+}
+
+.catalog-section ul{
+    list-style-type: none;
+    margin-top: 47px;
+    
+}
+
+ .catalog-section li{
+    margin-bottom: 30px;
+ }
+.catalog-section li button{
+    color:var(--darkBrown) ;
+    font-size: 14px;
+    font-family: "Mont";
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(224, 220, 215),
+        -1px -1px 10px rgb(224, 220, 215);
+    text-align: center;
+    width: 242px;
+    height: 76px;
+    border: none;
+    cursor: pointer;
+}
+
+.catalog-section div {
+    display: flex;
+    gap: 36px;
+}
+
+/*  */
+/* About Store Infromation Section */
+.aboutStore-inform-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8.5rem;
+}
+
+.aboutStore-inform-section h3{
+    color:var(--darkBrown) ;
+    font-size: 25px;
+    font-family: "Mont";
+    font-weight: 900;
+}
+
+.aboutStore-inform ul{
+    display: flex;
+    gap: 40px;
+    margin-top: 35px;
+}
+
+.aboutStore-inform li{
+    display: flex;
+    align-items: center;
+}
+
+#inform-amount{
+    color:var(--darkBrown) ;
+    font-size: 50px;
+    font-family: "Mont";
+    font-weight: 900;
+}
+
+#inform-text{
+    color:var(--darkBrown) ;
+    font-size: 13px;
+    font-family: "Mont";
+    font-weight: 400;
+    margin-left: 20px;
+}
+/*  */
+/* Delivery Inform */
+
+.delivery-inform-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.delivery-inform-section h4{
+    color:var(--darkBrown) ;
+    font-size: 25px;
+    font-family: "Mont";
+    font-weight: 900;
+}
+
+.delivery-inform-section p{
+    color:var(--darkBrown) ;
+    font-size: 12px;
+    font-family: "Mont";
+    font-weight: 400;
+    width: 60%;
+    text-align: center;
+    margin-top: 43px;
+}
