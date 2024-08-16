@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Semanthic's design */
-body{
+body {
     background-color: rgb(255, 250, 245);
 }
-header{
+
+header {
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
@@ -17,13 +19,13 @@ header{
 
 /*  */
 /* Header Logo*/
-.logo_container{
+.logo_container {
     display: flex;
     margin-top: 10px;
     margin-left: 32px;
 }
 
-.logo_container img{
+.logo_container img {
     width: 42px;
     height: 42px;
 }
@@ -32,7 +34,7 @@ header{
     font-family: "Mont";
     font-weight: 900;
     font-size: 14px;
-    color:  rgb(114, 4, 24);
+    color: rgb(114, 4, 24);
     padding-top: 5px;
 }
 
@@ -40,7 +42,7 @@ header{
     font-family: "Mont";
     font-weight: 400;
     font-size: 13px;
-    color: black;
+    color: rgb(36, 20, 0);
     padding-left: 5px;
 }
 
@@ -51,17 +53,18 @@ header{
 }
 
 #for_line {
-    border: 1px solid rgb(105, 100, 100);
+    border: 1px solid rgb(105, 103, 101);
     width: 203px;
 }
+
 /* Navigation */
-.navbar-list{
+.navbar-list {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.navbar-list a{
+.navbar-list a {
     text-decoration: none;
     color: rgb(36, 20, 0);
     font-size: 12px;
@@ -69,51 +72,56 @@ header{
     font-family: "Mont";
 }
 
-#catalog_href{
+#catalog_href {
     color: rgb(225, 106, 0);
     text-decoration-line: underline;
 }
 
 /* User Profile Panel */
-#user-profile{
+#user-profile {
     display: flex;
     margin-top: 10px;
 }
-.bi-person{
+
+.bi-person {
     color: black;
     font-size: 21px;
 }
-#user-profile span{
+
+#user-profile span {
     display: flex;
 }
-#user-profile p{
+
+#user-profile p {
     font-size: 14px;
     font-family: "Roboto";
     font-weight: 400;
     margin: 3px 40px 0 5px;
 }
+
 /*  */
 /* AllBooks navigation bar */
-.allBooks-section{
+.allBooks-section {
     display: flex;
     justify-content: space-evenly;
     margin-top: 123px;
 }
 
-.allBooks-section h2{
+.allBooks-section h2 {
     font-size: 25px;
     font-weight: 900;
     font-family: "Mont";
+    color: rgb(36, 20, 0);
 }
 
-.allBooks-navbar-list{
+.allBooks-navbar-list {
     list-style: none;
     display: flex;
     gap: 20px;
     margin-top: 7px;
 }
 
-.allBooks-navbar-list a{
+.allBooks-navbar-list a {
     text-decoration: none;
     color: rgb(36, 20, 0);
     font-size: 13px;
@@ -124,58 +132,98 @@ header{
 /*  */
 /* AllBooks Slider Section */
 
-.allBooks-slider-section{
+.allBooks-slider-section {
     display: flex;
     justify-content: center;
-    background-color: red;
 }
 
-.slider{
+.slider {
     border: 1px solid black;
     display: flex;
-    width: 70%;
-    gap: 3.75rem;
+    width: 80%;
     height: 400px;
-    background-color: yellow;
     margin: 10px 0;
     align-items: center;
+    overflow: hidden;
+}
+
+.slider-content {
+    display: flex;
+    gap: 3.75rem;
+    margin-left: 20px;
+}
+
+.bi-chevron-right,
+.bi-chevron-left {
+    width: 21px;
+    height: 41px;
+
+}
+
+.bi-chevron-right{
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    right: 140px;
+}
+
+.bi-chevron-left{
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    
 }
 /*  */
 /* Slider's elements */
-.slider span{
+.slider span {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(224, 220, 215),
+        -1px -1px 10px rgb(224, 220, 215);
+    width: 184px;
 
 }
-.slider img{
+
+.slider img {
     width: 134px;
     height: 190px;
 }
 
-#new-tag{
+#new-tag {
     background-color: rgb(235, 87, 87);
     display: flex;
+    justify-content: center;
     align-self: flex-end;
     color: white;
     font-weight: 900;
     font-size: 9px;
     font-family: "Mont";
+    box-shadow: -1px 1px 6px rgb(248, 216, 186);
+    border-radius: 3px;
+    width: 47px;
+    height: 13px;
+    text-align: center;
 }
 
-#slider-bookName{
+#slider-bookName {
     font-weight: 700;
     font-size: 14px;
     font-family: "Mont";
+    color: rgb(36, 20, 0);
 }
 
-#slider-authorName{
+#slider-authorName {
     font-weight: 400;
     font-size: 12px;
     font-family: "Mont";
+    color: rgb(36, 20, 0);
 }
 
-.slider button{
+.slider button {
     background-color: rgb(225, 106, 0);
     color: white;
     font-weight: 900;
@@ -183,5 +231,12 @@ header{
     font-family: "Mont";
     width: 136px;
     height: 29px;
+    border: none;
+    border-radius: 3px;
     cursor: pointer;
+    box-shadow: 3px 3px 10px rgb(251, 236, 223);
+    width: 70%;
+    margin-bottom: 17px;
 }
+/*  */
+/* Best Seller Slider Section */
