@@ -150,13 +150,13 @@ header {
 .slider-content {
     display: flex;
     gap: 3.75rem;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .bi-chevron-right,
 .bi-chevron-left {
-    width: 21px;
-    height: 41px;
+    font-size: 40px;
+    color:rgb(114, 4, 24);
 
 }
 
@@ -240,3 +240,66 @@ header {
 }
 /*  */
 /* Best Seller Slider Section */
+
+.bestSeller-slider-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 128px;
+}
+
+.bestSeller-slider-section h2{
+    color: rgb(36, 20, 0);
+    font-weight: 900;
+    font-size: 25px;
+    font-family: "Mont";
+}
+
+/*  */
+/* New Releases Slider Section */
+
+.newReleases-slider-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 128px;
+}
+
+.newReleases-slider-section h2{
+    color: rgb(36, 20, 0);
+    font-weight: 900;
+    font-size: 25px;
+    font-family: "Mont";
+}
+/*  */
+/* Social Links Section */
+
+.socialLinks-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.socialLinks-section h2{
+    color: rgb(36, 20, 0);
+    font-weight: 900;
+    font-size: 25px;
+    font-family: "Mont";
+}
+
+.socialLinks-div{
+    display: flex;
+    gap: 3.4rem;
+    margin-top: 30px;
+}
+
+.socialLinks-div a{
+    font-size: 80px;
+    color:rgb(36, 20, 0);
+}
+
+/*  */
