@@ -15,6 +15,11 @@ header {
     margin-top: 40px;
 }
 
+footer{
+    background-color: rgb(57, 31, 0);
+    margin-top: 6.5rem;
+    height: 276px;
+}
 
 
 /*  */
@@ -84,7 +89,7 @@ header {
 }
 
 .bi-person {
-    color: black;
+    color: rgb(36, 20, 0);
     font-size: 21px;
 }
 
@@ -97,6 +102,7 @@ header {
     font-family: "Roboto";
     font-weight: 400;
     margin: 3px 40px 0 5px;
+    color: rgb(36, 20, 0);
 }
 
 /*  */
@@ -303,3 +309,130 @@ header {
 }
 
 /*  */
+/* Footer Main PART */
+
+.footer-main{
+    display: flex;
+    justify-content: space-around;    
+    padding-top: 56px;
+}
+.footer-main a{
+    text-decoration: none;
+}
+
+/*  */
+/* Footer Logo*/
+
+.footer-logo_container {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 32px;
+}
+
+.footer-logo_container img {
+    width: 42px;
+    height: 42px;
+}
+
+#footer-firstP {
+    font-family: "Mont";
+    font-weight: 900;
+    font-size: 14px;
+    color: white;
+    padding-top: 5px;
+}
+
+#footer-secondP {
+    font-family: "Mont";
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-logo_textContent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+#footer-for_line {
+    border: 1px solid rgb(173, 163, 150);
+    width: 203px;
+}
+
+/*  */
+/* Footer List */
+
+.footer-list{
+    display: flex;
+    font-size: 13px;
+    font-family: "Mont";
+    font-weight: 400;
+    gap: 91px;
+}
+
+.footer-list ul{
+    list-style: none;
+}
+
+.footer-list li{
+    margin-bottom: 10px;
+}
+
+footer a, p{
+    color: white;
+}
+
+.footer-list li:first-child{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Mont";
+}
+/*  */
+/* Request Call div */
+
+.request-call-div{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.request-call-div p{
+    font-size: 12px;
+    font-weight: 900;
+    font-family: "Mont";
+    color: white;
+}
+
+#request-href{
+    border: 1px solid rgb(225, 106, 0);
+    text-decoration: none;
+    color: rgb(225, 106, 0);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Mont";
+}
+/*  */
+#copyright-text{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Mont";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
