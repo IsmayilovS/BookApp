@@ -1,4 +1,7 @@
 @import url(../css/font.css);
+:root{
+    --darkBrown:rgb(36, 20, 0)
+}
 * {
     margin: 0;
     padding: 0;
@@ -286,7 +289,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 12.5rem;
 }
 
 .socialLinks-section h2{

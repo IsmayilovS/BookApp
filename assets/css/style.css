@@ -263,3 +263,122 @@ main img{
     text-align: center;
     margin-top: 43px;
 }
+/*  */
+/* Social Links Section */
+
+.socialLinks-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8.37rem;
+}
+
+.socialLinks-section h2{
+    color: var(--darkBrown);
+    font-weight: 900;
+    font-size: 25px;
+    font-family: "Mont";
+}
+
+.socialLinks-div{
+    display: flex;
+    gap: 3.4rem;
+    margin-top: 30px;
+}
+
+.socialLinks-div a{
+    font-size: 80px;
+    color:var(--darkBrown);
+}
+
+/*  */
+/* Footer Main PART */
+
+.footer-main{
+    display: flex;
+    justify-content: space-around;    
+    padding-top: 56px;
+}
+.footer-main a{
+    text-decoration: none;
+}
+
+/*  */
+/* Footer Logo*/
+
+.footer-logo_container {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 32px;
+}
+
+.footer-logo_container img {
+    width: 42px;
+    height: 42px;
+}
+
+#footer-firstP {
+    font-family: "Mont";
+    font-weight: 900;
+    font-size: 14px;
+    color: white;
+    padding-top: 5px;
+}
+
+#footer-secondP {
+    font-family: "Mont";
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-logo_textContent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+#footer-for_line {
+    border: 1px solid rgb(173, 163, 150);
+    width: 203px;
+}
+
+/*  */
+/* Footer List */
+
+.footer-list{
+    display: flex;
+    font-size: 13px;
+    font-family: "Mont";
+    font-weight: 400;
+    gap: 91px;
+}
+
+.footer-list ul{
+    list-style: none;
+}
+
+.footer-list li{
+    margin-bottom: 10px;
+}
+
+footer a, p{
+    color: white;
+}
+
+.footer-list li:first-child{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Mont";
+}
+/*  */
+/*  */
+#copyright-text{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Mont";
+}
