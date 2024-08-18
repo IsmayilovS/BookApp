@@ -49,15 +49,16 @@ function displayResults(index){
     document.getElementById('image-title').value = index.volumeInfo.imageLinks.thumbnail? index.volumeInfo.imageLinks.thumbnail:""
     document.getElementById('description').value = index.volumeInfo.description?index.volumeInfo.description:""
     document.getElementById('book-type').value = index.volumeInfo.categories?[...index.volumeInfo.categories].join(", "):""
-
+    document.getElementById('year').value = index.volumeInfo.publishedDate
     // document.getElementById('book_newrelease').checked=index.volumeInfo.publishedDate.slice(0,4)>=2020?true:false
 }
+
 // Adding to Firebase Collection
 bookForm.addEventListener('submit', async (e) => {
     e.preventDefault()
     const title = document.getElementById('book-title').value
     const author = document.getElementById('author-title').value
-    const publishDate = "document.getElementById('publishDate').value"
+    const publishDate = document.getElementById('year').value
     const description = document.getElementById('description').value
     const imageLink = document.getElementById('image-title').value
     const bookType = document.getElementById('book-type').value
