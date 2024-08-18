@@ -23,15 +23,15 @@
             <ul class="logo_list">
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p><a href="">Home</p></a>
+                    <p><a href="../../index.html">Home</p></a>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p><a href="">Books</p></a>
+                    <p><a href="#books">Books</p></a>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
-                    <p><a href="">About</p></a>
+                    <p><a href="#about">About</p></a>
                 </li>
                 <li>
                     <img src="../images/book_small_logo.png" alt="book_logo" srcset="">
@@ -57,7 +57,7 @@
             </article>
             <article>
                 <div>
-                    <h2 id="add-book-text">Add book</h2>
+                    <h2 id="add-book-text"><a name="books">Add book</a></h2>
                     <h4 id="search-book-text">Search book</h4>
                     <input type="text" name="" placeholder="Dan Brown" id="search-input">
                     <button id="search-btn">
@@ -92,7 +92,7 @@
                     </form>
                 </div>
                 <div>
-                    <h3 id="aboutStore-text">About Store</h3>
+                    <h3 id="aboutStore-text"><a name="about">About Store</a></h3>
                     <form action="" id="aboutStore-form">
                         <p>Title</p>
                         <input type="text" name="" id="aboutStore-title">
@@ -112,57 +112,56 @@
                         <tr>
                             <th id="es1">#</th>
                             <th id="es2">Title</th>
-                            <th id="es3"><p>Description</p></th>
+                            <th id="es3">
+                                <p>Description</p>
+                            </th>
                             <th id="es4">Category</th>
                             <th id="es5">Author</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody class="tbody-books">
+                        <!-- <tr class="tbody-tr">
                             <td>1</td>
-                            <td id="book-table-img-td"><img
+                            <td class="book-table-img-td" id="book-table-img-td"><img
                                     src="https://m.media-amazon.com/images/I/61xTXK18-UL._AC_UF1000,1000_QL80_.jpg"
                                     alt="" srcset="" id="book-table-img">
                                 <p>Angels</p>
                             </td>
-                            <td id="es4-td"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni nisi nam,
-                                itaque
-                                velit accusantium in quidem quae soluta, eligendi id voluptatem laudantium
-                                voluptatibus
-                                blanditiis iusto ipsa ipsam sit. Nisi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, vel voluptatibus modi exercitationem dolorem unde eligendi accusantium consequatur tenetur at laborum asperiores quae repellendus quam ipsam eveniet doloribus maxime in!</p></td>
-                            <td>Dedective</td>
-                            <td>Dan Brown</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td id="book-table-img-td"><img
-                                    src="https://m.media-amazon.com/images/I/61xTXK18-UL._AC_UF1000,1000_QL80_.jpg"
-                                    alt="" srcset="" id="book-table-img">
-                                <p>Angels</p>
-                            </td>
-                            <td id="es4-td"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni nisi nam,
-                                itaque
-                                velit accusantium in quidem quae soluta, eligendi id voluptatem laudantium
-                                voluptatibus
-                                blanditiis iusto ipsa ipsam sit. Nisi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, vel voluptatibus modi exercitationem dolorem unde eligendi accusantium consequatur tenetur at laborum asperiores quae repellendus quam ipsam eveniet doloribus maxime in!</p></td>
-                            <td>Dedective</td>
-                            <td>Dan Brown</td>
-                            <tr>
-                                <td>1</td>
-                                <td id="book-table-img-td"><img
-                                        src="https://m.media-amazon.com/images/I/61xTXK18-UL._AC_UF1000,1000_QL80_.jpg"
-                                        alt="" srcset="" id="book-table-img">
-                                    <p>Angels</p>
-                                </td>
-                                <td id="es4-td"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni nisi nam,
+                            <td class="es4-td" id="es4-td">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni nisi nam,
                                     itaque
                                     velit accusantium in quidem quae soluta, eligendi id voluptatem laudantium
                                     voluptatibus
-                                    blanditiis iusto ipsa ipsam sit. Nisi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, vel voluptatibus modi exercitationem dolorem unde eligendi accusantium consequatur tenetur at laborum asperiores quae repellendus quam ipsam eveniet doloribus maxime in!</p></td>
-                                <td>Dedective</td>
-                                <td>Dan Brown</td>
-                            </tr>
-                        </tr>
+                                    blanditiis iusto ipsa ipsam sit. Nisi?Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Illo, vel voluptatibus modi exercitationem dolorem unde eligendi
+                                    accusantium consequatur tenetur at laborum asperiores quae repellendus quam ipsam
+                                    eveniet doloribus maxime in!</p>
+                            </td>
+                            <td>Dedective</td>
+                            <td>Dan Brown</td>
+                        </tr> -->
+
+                        <!-- <tr>
+                            <td>1</td>
+                            <td id="book-table-img-td"><img
+                                    src="https://m.media-amazon.com/images/I/61xTXK18-UL._AC_UF1000,1000_QL80_.jpg"
+                                    alt="" srcset="" id="book-table-img">
+                                <p>Angels</p>
+                            </td>
+                            <td id="es4-td">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni nisi nam,
+                                    itaque
+                                    velit accusantium in quidem quae soluta, eligendi id voluptatem laudantium
+                                    voluptatibus
+                                    blanditiis iusto ipsa ipsam sit. Nisi?Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Illo, vel voluptatibus modi exercitationem dolorem unde eligendi
+                                    accusantium consequatur tenetur at laborum asperiores quae repellendus quam ipsam
+                                    eveniet doloribus maxime in!</p>
+                            </td>
+                            <td>Dedective</td>
+                            <td>Dan Brown</td>
+                        </tr> -->
+
                     </tbody>
                 </table>
             </article>
