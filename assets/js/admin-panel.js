@@ -10,6 +10,7 @@ const suggestionContainer = document.querySelector(".search-suggestion-container
 const bookForm = document.getElementById("book-form")
 
 
+
 searchBtn.addEventListener('click',()=>book_search(searchInput.value.trim()))
 searchInput.addEventListener('keydown',(e)=>{
     if(e.key=="Enter"){
@@ -48,6 +49,7 @@ function displayResults(index){
     document.getElementById('image-title').value = index.volumeInfo.imageLinks.thumbnail? index.volumeInfo.imageLinks.thumbnail:""
     document.getElementById('description').value = index.volumeInfo.description?index.volumeInfo.description:""
     document.getElementById('book-type').value = index.volumeInfo.categories?[...index.volumeInfo.categories].join(", "):""
+
     // document.getElementById('book_newrelease').checked=index.volumeInfo.publishedDate.slice(0,4)>=2020?true:false
 }
 // Adding to Firebase Collection
@@ -57,12 +59,18 @@ bookForm.addEventListener('submit', async (e) => {
     const author = document.getElementById('author-title').value
     const publishDate = "document.getElementById('publishDate').value"
     const description = document.getElementById('description').value
+    const imageLink = document.getElementById('image-title').value
+    const bookType = document.getElementById('book-type').value
+    
    try {
     const docRef = await addDoc(collection(db, "books"), {
         title,
         author,
         publishDate,
-        description
+        description,
+        imageLink,
+        bookType
+
     });
     console.log("Document written with ID: ", docRef.id);
     } catch (e) {
@@ -72,32 +80,33 @@ bookForm.addEventListener('submit', async (e) => {
 })
 
 
-// Adding books from Admin Collections
+// Getting books from Admin Collections
 
 const library = document.querySelector(".tbody-books")
 
 const fetchBooks = async () => {
     const books = await getDocs(collection(db, "books")) 
     books.forEach(book => {
-        console.log(book);
+        // console.log(book);
         const ListItemBook = document.createElement("tr")
         ListItemBook.classList.add("tbody-tr")
         for (let b=1; b < 10; b++){
         ListItemBook.innerHTML = `
-                            <td>${b}</td>
+                            <td>#</td>
                             <td class="book-table-img-td" id="book-table-img-td"><img
-                                    src="https://m.media-amazon.com/images/I/61xTXK18-UL._AC_UF1000,1000_QL80_.jpg"
+                                    src=${book.data().imageLink}
                                     alt="" srcset="" id="book-table-img">
                                 <p>${book.data().title}</p>
                             </td>
                             <td class="es4-td" id="es4-td">
                                 <p>${book.data().description}</p>
                             </td>
-                            <td>Dedective</td>
+                            <td>${book.data().bookType}</td>
                             <td>${book.data().author}</td>
 
 
         `
+        // console.log(book.data());
         library.appendChild(ListItemBook)
     }
     });

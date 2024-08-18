@@ -49,33 +49,32 @@ signInWithEmailAndPassword(auth, email, password)
 
 })
 
-export function loginPart(){
-// SIGNING ///
+// export function loginPart(){
 
 
-//submit button
-const submit = document.getElementById('submitL');
-submit.addEventListener("click", function (event) {
-  event.preventDefault()
 
-  //inputs
-const email = document.getElementById("emailL").value
-const password = document.getElementById("passwordL").value
+// //submit button
+// const submit = document.getElementById('submitL');
+// submit.addEventListener("click", function (event) {
+//   event.preventDefault()
 
-signInWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    alert("Signing ...")
-    window.location.href = "index.html"
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    alert(errorMessage)
-    // ..
-  });
+//   //inputs
+// const email = document.getElementById("emailL").value
+// const password = document.getElementById("passwordL").value
 
-})
-}
+// signInWithEmailAndPassword(auth, email, password)
+//   .then((userCredential) => {
+//     // Signed in 
+//     const user = userCredential.user;
+//     // alert("Signing ...");
+//     // ...
+//   })
+//   .catch((error) => {
+//     const errorCode = error.code;
+//     const errorMessage = error.message;
+//     alert(errorMessage)
+//     // ..
+//   });
+
+// })
+// }

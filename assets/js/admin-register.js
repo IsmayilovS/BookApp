@@ -1,7 +1,7 @@
   // import { loginPart } from "./admin-login";
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
-  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
+  import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -81,3 +81,32 @@ function afterRegistration(){
   formSign.classList.remove("hidden");
 }
 
+
+// SIGNING ///
+
+
+//submit button
+const submitt = document.getElementById('submitL');
+submitt.addEventListener("click", function (event) {
+  event.preventDefault()
+
+  //inputs
+const email = document.getElementById("emailL").value
+const password = document.getElementById("passwordL").value
+
+signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    alert("Signing ...")
+    window.location.href = "../pages/admin-panel.html"
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage)
+    // ..
+  });
+
+})
