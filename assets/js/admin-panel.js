@@ -19,7 +19,7 @@ searchInput.addEventListener('keydown',(e)=>{
 })
 
 async function book_search(title) {
-    // suggestionContainer.innerHTML=""
+    suggestionContainer.innerHTML=""
     try {
         const response=await fetch(`https://www.googleapis.com/books/v1/volumes?q=${title}&maxResults=40&key=${apiKey}`)
         const data=await response.json()
