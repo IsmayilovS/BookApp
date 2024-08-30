@@ -85,15 +85,16 @@ bookForm.addEventListener('submit', async (e) => {
 
 const library = document.querySelector(".tbody-books")
 
+let counter=1
 const fetchBooks = async () => {
     const books = await getDocs(collection(db, "books")) 
     books.forEach(book => {
         // console.log(book);
         const ListItemBook = document.createElement("tr")
         ListItemBook.classList.add("tbody-tr")
-        for (let b=1; b < 10; b++){
+        
         ListItemBook.innerHTML = `
-                            <td>#</td>
+                            <td>${counter}</td>
                             <td class="book-table-img-td" id="book-table-img-td"><img
                                     src=${book.data().imageLink}
                                     alt="" srcset="" id="book-table-img">
@@ -108,9 +109,10 @@ const fetchBooks = async () => {
 
         `
         // console.log(book.data());
-        library.appendChild(ListItemBook)
+        library.appendChild(ListItemBook);
+        counter++
     }
-    });
+    );
 }
  
 fetchBooks()

@@ -9,8 +9,16 @@ const library = document.querySelector(".slider-content")
 
 const fetchBooks = async () => {
     const books = await getDocs(collection(db, "books")) 
+    // const new_books = document.querySelectorAll(".new-tag")
+    // console.log(new_books);
+    
     books.forEach(book => {
+        // console.log(book.data());
+        
+
         // console.log(book);
+        console.log(book.data().publishDate.slice(0,4)>=2000);
+        
         const ListItemBook = document.createElement("span")
         ListItemBook.innerHTML = `
                             <p class="new-tag hidden">New</p>
@@ -19,11 +27,12 @@ const fetchBooks = async () => {
                     <p id="slider-authorName">${book.data().author}</p>
                     <button>READ MORE</button>
         `
-        // if(book.data().publishDate.slice(0,4)>=2000){
-        //     document.getElementsByClassName("new-tag").classList.remove("hidden")
-        // }
         // console.log(book.data());
         library.appendChild(ListItemBook)
+
+        if(book.data().publishDate.slice(0,4)>=2000){
+            document.querySelector(".new-tag").classList.remove("hidden")
+        }
     });
 }
  
